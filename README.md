@@ -12,4 +12,10 @@
 
 [![asciicast](https://asciinema.org/a/396149.svg)](https://asciinema.org/a/396149)
 ## How to play
+<b>brain-even</b>
+
 [![asciicast](https://asciinema.org/a/lQPNnnsDdfTdtFpKYHTpLpF9j.svg)](https://asciinema.org/a/lQPNnnsDdfTdtFpKYHTpLpF9j)
+
+<b>brain-calc</b>
+
+[![asciicast](https://asciinema.org/a/396498.svg)](https://asciinema.org/a/396498)
