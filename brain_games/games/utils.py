@@ -12,18 +12,16 @@ def is_right_answer(answer, number, mode):
         is_correct_answer = is_even(number) and answer == 'yes' \
             or not is_even(number) and answer == 'no'
         return is_allowable_answer and is_correct_answer
-    elif mode == 'game-calc' or 'game-gcd':
+    elif mode == 'game-calc' or 'game-gcd' or 'game-progresiion':
         return int(answer) == number
 
 
 def print_feed(name, answer, number, mode):
-    if mode == 'even-game':
-        return print("Let's try again, {}!".format(name))
-    else:
-        return print(
-            ("'{}' is wrong answer ;(. Correct answer was '{}'.")
-            .format(answer, number)
-        )
+    print(
+        ("'{}' is wrong answer ;(. Correct answer was '{}'.")
+        .format(answer, number)
+    )
+    print("Let's try again, {}!".format(name))
 
 
 def brain_even_handler():
@@ -50,3 +48,22 @@ def brain_gcd_handler():
     number = gcd(num1, num2)
     print('Question: {} {}'.format(num1, num2))
     return number
+
+
+def brain_progression_handler():
+    print('What number is missing in the progression?')
+    count = 0
+    current_number = random.randint(1, 50)
+    step_value = random.randint(1, 3)
+    random_idx = random.randint(0, 9)
+    numbers = ()
+    while count < 10:
+        if count == random_idx:
+            num_for_answer = current_number
+            numbers += ('..',)
+        else:
+            numbers += (str(current_number),)
+        current_number += step_value
+        count += 1
+    print('Question: {}'.format(' '.join(numbers)))
+    return num_for_answer

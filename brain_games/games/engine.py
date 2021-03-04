@@ -13,6 +13,8 @@ def start_game(mode):
             number = utils.brain_calc_handler()
         elif mode == 'game-gcd':
             number = utils.brain_gcd_handler()
+        else:
+            number = utils.brain_progression_handler()
         answer = prompt.string('Your answer: ')
         if not utils.is_right_answer(answer, number, mode):
             return utils.print_feed(name, answer, number, mode)
