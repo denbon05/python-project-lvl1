@@ -10,6 +10,16 @@
 ## How to install
 <pre>python3 -m pip install --user git+https://github.com/denbon05/python-project-lvl1</pre>
 
+### Games list
+
+<ol>
+	<li>brain-even</li>
+	<li>brain-calc</li>
+	<li>brain-gcd</li>
+	<li>brain-progression</li>
+	<li>brain-prime</li>
+</ol>
+
 [![asciicast](https://asciinema.org/a/396149.svg)](https://asciinema.org/a/396149)
 ## How to play
 <b>brain-even</b>
@@ -31,3 +41,7 @@
 <b>brain-prime</b>
 
 [![asciicast](https://asciinema.org/a/396768.svg)](https://asciinema.org/a/396768)
+
+### Author
+
+<small>Denys Bondarenko denisamigoua@gmail.com</small>

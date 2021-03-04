@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "hexlet-code"
-version = "0.1.0"
+version = "0.2.0"
 description = "Console games"
 authors = ["denis bondarenko <denisamigoua@gmail.com>"]
 
