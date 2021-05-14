@@ -34,8 +34,6 @@ def is_prime(number):
 
 def is_right_answer(number, mode, answer=None):
     is_allowable_answer = answer in ('yes', 'no')
-    if not is_allowable_answer:
-        return False
     if mode == 'game_prime':
         return is_allowable_answer and is_prime(number) and answer == 'yes' \
             or not is_prime(number) and answer == 'no'
@@ -43,7 +41,7 @@ def is_right_answer(number, mode, answer=None):
         return int(answer) == number
     is_correct_answer = is_even(number) and answer == 'yes' \
         or not is_even(number) and answer == 'no'
-    return is_correct_answer
+    return is_allowable_answer and is_correct_answer
 
 
 def print_feed(name, answer, number):

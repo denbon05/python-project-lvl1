@@ -7,8 +7,9 @@
 ## Description
 <p>Simple games in bash</p>
 
-## How to install
+## How to install / uninstall
 <pre>python3 -m pip install --user git+https://github.com/denbon05/python-project-lvl1</pre>
+<pre>python3 -m pip uninstall hexlet-code</pre>
 
 ### Games list
 
