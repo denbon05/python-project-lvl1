@@ -20,7 +20,7 @@ brain-prime:
 	poetry run brain-prime
 
 build:
-	poetry build
+	rm -fr dist && poetry build
 
 lint:
 	poetry run flake8 brain_games
@@ -29,4 +29,4 @@ publish:
 	poetry publish --dry-run
 
 package-install i:
-	python3 -m pip install --user dist/*.whl --force-reinstall
+	python3 -m pip install --user dist/*.whl

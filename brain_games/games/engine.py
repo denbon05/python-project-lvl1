@@ -16,7 +16,7 @@ def start_game(mode):
         number = run_game()
         answer = prompt.string('Your answer: ')
         if not utils.is_right_answer(number, mode, answer):
-            return utils.print_feed(name, answer, number, mode)
+            return utils.print_feed(name, answer, number)
         print('Correct!')
         count += 1
     print('Congratulations, {}!'.format(name))
